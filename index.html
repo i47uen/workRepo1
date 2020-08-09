@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopSklad</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -34,63 +36,121 @@
     <main>
         <!-- content -->
 
-        <section class="section-hero-slider" style="background-image: url('./assets/images/hero-slider-bg1.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="promo">
-                            Priestor už od 49 euro mesačne <br>
-                            Otvorené 24/7
+        <div id="hero-slider">
+            <div class="section-hero-slider" style="background-image: url('./assets/images/hero-slider-bg1.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="promo">
+                                Priestor už od 49 euro mesačne <br>
+                                Otvorené 24/7
+                            </div>
+                            <h2>Prenájom skladových kontajnerov</h2>
+                            <ul>
+                                <li>Plocha na výber od 3,5 m2</li>
+                                <li>Sklady sú v dobrých lokalitách</li>
+                                <li>Autom rovno do skladu</li>
+                                <li>Možnosť mať svetlo a zásuvku v kontajneri</li>
+                                <li>Kamerový systém v areáli</li>
+                                <li>Pomoc v prestahovani</li>
+                            </ul>
                         </div>
-                        <h2>Prenájom skladových kontajnerov</h2>
-                        <ul>
-                            <li>Plocha na výber od 3,5 m2</li>
-                            <li>Sklady sú v dobrých lokalitách</li>
-                            <li>Autom rovno do skladu</li>
-                            <li>Možnosť mať svetlo a zásuvku v kontajneri</li>
-                            <li>Kamerový systém v areáli</li>
-                            <li>Pomoc v prestahovani</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5">
-                        <form class="hero-slider-form" action="/">
-                            <h3>Prenajať priestor</h3>
-                            <div class="select-wrapper">
-                                <select name="size" id="heroForm_lokalita">
-                                    <option value="">Lokalita</option>
-                                </select>
-                            </div>
-                            <div class="select-wrapper">
-                                <select name="size" id="heroForm_size">
-                                    <option value="">40’ ( 28 m2 / 76 m3 )</option>
-                                </select>
-                            </div>
-                            <div class="select-wrapper">
-                                <select name="size" id="heroForm_amout">
-                                    <option value="">Počet kusov</option>
-                                </select>
-                            </div>
-                            <div class="select-wrapper">
-                                <select name="size" id="heroForm_payp">
-                                    <option value="">Platobné obdobie</option>
-                                </select>
-                            </div>
-                            <div class="payment">
-                                Vasa mesiacna platba: 0
-                            </div>
-                            <button type="submit" class="btn btn-submit btn-yellow">Prenajať</button>
+                        <div class="col-lg-5">
+                            <form class="hero-slider-form" action="/">
+                                <h3>Prenajať priestor</h3>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_lokalita">
+                                        <option value="">Lokalita</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_size">
+                                        <option value="">40’ ( 28 m2 / 76 m3 )</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_amout">
+                                        <option value="">Počet kusov</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_payp">
+                                        <option value="">Platobné obdobie</option>
+                                    </select>
+                                </div>
+                                <div class="payment">
+                                    Vasa mesiacna platba: 0
+                                </div>
+                                <button type="submit" class="btn btn-submit btn-yellow">Prenajať</button>
 
-                            <button class="btn btn-video_instruction">Video návod</button>
-                            <button class="btn btn-instruction">Video návod</button>
-                        </form>
+                                <button class="btn btn-video_instruction">Video návod</button>
+                                <button class="btn btn-instruction">Video návod</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- end content -->
+            <div class="section-hero-slider" style="background-image: url('./assets/images/hero-slider-bg1.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="promo">
+                                Priestor už od 49 euro mesačne <br>
+                                Otvorené 24/7
+                            </div>
+                            <h2>Prenájom skladových kontajnerov</h2>
+                            <ul>
+                                <li>Plocha na výber od 3,5 m2</li>
+                                <li>Sklady sú v dobrých lokalitách</li>
+                                <li>Autom rovno do skladu</li>
+                                <li>Možnosť mať svetlo a zásuvku v kontajneri</li>
+                                <li>Kamerový systém v areáli</li>
+                                <li>Pomoc v prestahovani</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5">
+                            <form class="hero-slider-form" action="/">
+                                <h3>Prenajať priestor</h3>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_lokalita">
+                                        <option value="">Lokalita</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_size">
+                                        <option value="">40’ ( 28 m2 / 76 m3 )</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_amout">
+                                        <option value="">Počet kusov</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select name="size" id="heroForm_payp">
+                                        <option value="">Platobné obdobie</option>
+                                    </select>
+                                </div>
+                                <div class="payment">
+                                    Vasa mesiacna platba: 0
+                                </div>
+                                <button type="submit" class="btn btn-submit btn-yellow">Prenajať</button>
+
+                                <button class="btn btn-video_instruction">Video návod</button>
+                                <button class="btn btn-instruction">Video návod</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end content -->
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
