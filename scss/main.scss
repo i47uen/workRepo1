@@ -1,0 +1,238 @@
+@import "grid";
+@import "variables";
+@import "normalize";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+
+// debug
+*{
+    // outline: 0.1em solid rgba(red, 0.2);
+}
+
+body{
+    font-family: "Montserrat", "Roboto", "Open Sans", sans-serif;
+    background: $white;
+    color: $black;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+button, select, input{
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+select{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid $black;
+    padding: 15px 10px;
+    position: relative;
+    option::before {
+        content: ">";
+        color: #000;
+        background: #000;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+button{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn{
+    height: 50px;
+    min-width: 270px;
+    font-weight: 700;
+    &-orange{
+        background: $orange;
+    }
+    &-yellow{
+        background: $yellow;
+    }
+    &-black{
+        background: $black;
+        color: $white;
+    }
+}
+
+header{
+
+    .navbar{
+        padding: 10px 0;
+        background: $white;
+        &-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: 0 16px;
+                list-style: none;
+                .navbar-list__link{
+                    white-space: nowrap;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: $black;
+                    &.active{
+                        color: $orange;
+                        border-bottom: 3px solid $orange;
+                    }
+                }
+            }
+        }
+        &-phone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                padding-right: 10px;
+            }
+            a{ 
+                text-decoration: none;
+                color: $black;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+main{
+    .section-hero-slider{
+        padding: 80px 0;
+        h2{
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: $white;
+        }
+        ul{
+            color: $white;
+            padding-left: 21px;
+            list-style: none;
+            li{
+                position: relative;
+                margin-bottom: 12px;
+                font-size: 20px;
+                font-weight: 600;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 9px;
+                    height: 9px;
+                    background: $yellow;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: -18px;
+                    top: 30%;
+                }
+            }
+        }
+        .promo{
+            max-width: 85%;
+            padding: 45px 20px;
+            padding-top: 55px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            font-size: 22px;
+            background: $yellow;
+            font-weight: 700;
+            -webkit-clip-path: polygon(0 0, 100% 13%, 100% 84%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+        }
+        .hero-slider-form{
+
+            background: $white;
+            padding: 18px 35px;
+
+            .btn{
+                width: 100%;
+                &-video_instruction{
+                    background-color: rgba($orange, 0.5);
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 25px;
+                        height: 19px;
+                        background-image: url("../assets/images/icons/youtube.png");
+                        position: absolute;
+                        top: 30%;
+                        left: 17%;
+                    }
+                }
+                &-instruction{
+                    background-color: rgba($orange, 0.2);
+                }
+                &-submit{
+                    text-transform: uppercase;
+                }
+            }
+
+            max-width: 80%;
+            margin: auto;  
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .select-wrapper{
+                width: 100%;
+                position: relative;
+                &::before{
+                    content: "ᐳ";
+                    position: absolute;
+                    top: 29%;
+                    right: 15px; 
+                    display: inline-block;
+                    transform: rotate(90deg);
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $yellow
+                }
+                select{
+                    width: 100%;
+                }
+            }
+            .payment{
+                align-self: flex-end;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 25px;            
+            }
+        }
+    }
+}
