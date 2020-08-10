@@ -84,6 +84,7 @@ button{
 }
 
 .btn{
+    transition: all 0.2s ease-in;
     height: 50px;
     min-width: 270px;
     font-weight: 700;
@@ -395,6 +396,46 @@ main{
                 font-weight: 600;
                 margin-top: 10px;
                 margin-bottom: 25px;            
+            }
+        }
+    }
+}
+
+footer{
+    padding: 30px 0; 
+    background: $yellow;
+    color: $black;
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        margin-top: 40px;
+        li{
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        a{
+            color: inherit;
+            font-weight: 600;
+        }
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        flex-direction: column;
+        a{
+            font-weight: 600;
+            color: $black;
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                margin-right: 10px;
             }
         }
     }
